@@ -1,0 +1,912 @@
+/* --- TOP BAR (Fix Logo & Center Everything) --- */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative; /* Ensures proper alignment */
+}
+
+/* Contact Info - Fully Left */
+.contact-info {
+    font-size: 1em;
+    color: #333;
+    white-space: nowrap;
+    flex: 1;
+    text-align: left;
+}
+
+/* Logo - Increase Size & Ensure Centering */
+.logo-container {
+    flex: 2; /* Gives more space to the logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 220px; /* Increased size */
+    width: auto;
+    display: block;
+}
+
+/* Search Bar - Fully Right */
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-container input {
+    border: 2px solid #02457A;
+    padding: 10px;
+    width: 230px;
+    font-size: 1em;
+    border-radius: 5px 0 0 5px; /* Rounded left corners */
+}
+
+.search-btn {
+    background: #02457A;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Rounded right corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn:hover {
+    background: #FFA500;
+}
+
+/* --- NAVIGATION BAR (Thinner & Properly Aligned) --- */
+header {
+    background-color: #02457A;
+    padding: 5px 0; /* Reduce height further */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Explicit height for better alignment */
+}
+
+/* Center Navigation Items */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%; /* Ensure full width */
+    text-align: center; /* Aligns text centrally */
+}
+
+/* Remove Underline from Links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    line-height: 50px; /* Align text vertically */
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* User & Cart Icons */
+.user-cart {
+    font-size: 1.3em;
+    display: flex;
+    gap: 15px;
+}
+
+/* --- NAVIGATION BAR --- */
+header {
+    background-color: #02457A;
+    padding: 12px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Center Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Remove Underline from Links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Style for dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button (Shop) */
+.dropbtn {
+    background: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect - Navy Blue Background with White Text */
+.dropdown-content a:hover {
+    background: #002855; /* Navy blue */
+    color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+main {
+    background: #fff;
+    padding: 40px; /* More padding inside main content area */
+    margin-top: 20px;
+    border-radius: 10px; /* Larger border radius for soft edges */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Headings */
+.hero h2 {
+    font-size: 3.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Limited Stock Message */
+.limited-stock {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #B22222;
+    margin-bottom: 20px;
+}
+
+/* Call-to-Action Button */
+.hero .button {
+    background: linear-gradient(135deg, #FF6600, #FF4500);
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.3em;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 15px auto 25px auto;
+}
+
+.hero .button:hover {
+    background: linear-gradient(135deg, #FF4500, #CC3700);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Promotion Badges */
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px; /* Adjusted spacing */
+}
+
+.badge {
+    background: red;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 25px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.badge-limited {
+    background: #FF4500;
+}
+
+/* Badge Hover Effect */
+.badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Basic styles for the footer to ensure it stays at the bottom of the content */
+/* Footer styles to ensure full width and visibility */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #02457A;
+    color: rgb(255, 255, 255); /* Sets the text color to white for better visibility */
+    width: 100%; /* Ensures footer covers the full width of the viewport */
+    position: fixed; /* Keeps footer at the bottom regardless of content height */
+    left: 0; /* Aligns footer to the left edge of the viewport */
+    bottom: 0; /* Positions the footer at the bottom of the viewport */
+    right: 0; /* Stretches the footer to the right edge of the viewport */
+    clear: both; /* Clears the floats to ensure the footer behaves as expected */
+}
+
+/* Additional global settings to prevent any unwanted horizontal scrolling */
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scroll bars if content is wider than the viewport */
+}
+
+
+.container {
+    min-height: 100%; /* Ensure container can stretch to minimum of the viewport height */
+    position: relative; /* Needed to position footer relative to this container if using footer inside container */
+    padding-bottom: 60px; /* Space for the footer */
+}
+
+/* Additional styles to ensure footer behaves as expected */
+body {
+    display: flex;
+    flex-direction: column; /* Ensures footer remains at the end of the content */
+}
+
+main {
+    flex: 1; /* Allows main content to expand and push footer to the bottom */
+}
+
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px; /* Increased gap between products */
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 25px; /* More internal padding */
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product h3, .product p {
+    margin-bottom: 15px; /* Increased spacing for clarity */
+}
+
+/* Button Enhancements */
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px; /* More robust button padding */
+    font-size: 1.3em;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Deeper shadow for a 3D effect */
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display:block;
+        text-align: center;
+    }
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 40px; /* Increased padding for testimonials */
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* More gap for better visual separation */
+}
+
+.testimonial {
+    background: white;
+    padding: 30px; /* More padding for each testimonial */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Soft rounded corners for testimonials */
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 30px 0;
+}
+
+.testimonial p {
+    font-weight: bold;
+    color: #333;
+}
+
+.star-rating {
+    color: #FFD700; /* Gold color */
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.star {
+    display: inline-block;
+    padding: 2px;
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ensure Hero Title is Centered */
+.hero-content h2 {
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Improved Section Title Styling */
+.section-heading {
+    background: linear-gradient(135deg, #02457A, #0367A6); /* Elegant gradient navy */
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    margin: 50px auto; /* Increased spacing for better balance */
+    width: 95%;
+    max-width: 1200px;
+}
+
+
+
+/* Section Backgrounds to Add Depth */
+.section-container {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Improved Button Styling */
+.button {
+    background: linear-gradient(135deg, #FF6600, #FF4500);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #FF4500, #CC3700);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+/* Force the map container to be full width & height */
+.all-products-location {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin: 50px auto !important;
+    padding: 40px !important;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure the map inside the location is also large */
+.all-products-location .map-container {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 30px auto !important;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Force the iframe (Google Maps) to be big */
+.all-products-location .map-container iframe {
+    width: 100% !important;
+    height: 700px !important;
+    min-height: 700px !important;
+    border-radius: 10px;
+}
+
+/* Center the "Our Location" title */
+.all-products-location h2,
+#location h2 {
+    text-align: center !important;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Center the text under "Our Location" */
+.all-products-location p,
+#location p {
+    text-align: center !important;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+#flash-sales .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns */
+    gap: 30px; /* Increase gap for better spacing */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#flash-sales .product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-height: 300px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#flash-sales .product img {
+    width: 100%; /* Full width of the box */
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area well */
+    max-height: 50%; /* Limits image height to balance text and visuals */
+}
+
+#flash-sales .product h3, #flash-sales .product p {
+    margin: 10px 0; /* Provides consistent spacing around text */
+}
+
+#flash-sales .product h3 {
+    font-size: 1.5em; /* Larger font size for product title */
+}
+
+/* Center Flash Sales title */
+#flash-sales h2 {
+    text-align: center !important;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Center the product grid if needed */
+#flash-sales .product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+#flash-sales .button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* Center the button in the box */
+}
+
+#flash-sales .button:hover {
+    background-color: #0056b3;
+}
+
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Product Grid - 3 Columns */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bigger Product Card */
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #02457A;
+}
+
+/* Buy Button */
+.buy-btn {
+    background: #ff4500;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #cc3700;
+}
+
+/* Discount Badge */
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 6px 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* --- COMING SOON BOX --- */
+.coming-soon-box {
+    background: #fff3cd;
+    border: 2px solid #ffcc00;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.coming-soon-box h2 {
+    font-size: 2em;
+    color: #ff8800;
+    margin-bottom: 10px;
+}
+
+.coming-soon-box p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Center-align main headings */
+.container h1, 
+.container h2, 
+#location h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Center-align subtext */
+.container p, 
+#location p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Improved section styling */
+.section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align location section */
+#location {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align Google Maps */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Make Google Maps responsive & properly sized */
+.map-container iframe {
+    width: 90%;
+    max-width: 900px;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #002147;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+    .container h1, 
+    .container h2, 
+    #location h2 {
+        font-size: 24px;
+    }
+    .map-container iframe {
+        height: 350px;
+    }
+}
+/* Contact Section */
+.contact-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Contact Headings */
+.contact-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Message Textarea */
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.contact-form button {
+    background: #002147;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0047ab;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
